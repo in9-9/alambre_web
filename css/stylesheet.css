@@ -68,6 +68,29 @@ body {
         "footer"
     }   
 
+    #fullContainerMIXES {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns:100vw;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer"
+    }    
+
+#fullContainerEVENTOS {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns:100vw;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer"
+    }    
 
 /* ========== BEM ============ */
 
@@ -262,7 +285,7 @@ aside{
     background: radial-gradient(circle, rgba(178,34,34,1) 0%, rgba(0,0,0,1) 69%);
     background-position: center;
     width:100%;
-    height:50vh;
+    height:30vh;
     color:white;
     padding:60px;
     text-align:center;
@@ -372,8 +395,9 @@ form {
     color:rgb(38, 38, 38);
     display:flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
+    margin: 20px 20px;
 }
 
 input[type=text] {
@@ -383,8 +407,19 @@ input[type=text] {
     border-bottom: 2px solid rgb(38, 38, 38);
 }
 
+
 input { 
     text-align: left; 
+}
+
+.botonaso {
+    background-color: #404040;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 select {
@@ -402,6 +437,23 @@ option {
     margin: 0px 50%;
 }
 
+.contactoHead {
+    color:black;
+    font-weight: 400;
+
+}
+
+.formu {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.formu input {
+    width:50%;
+    text-align: center;
+}
 
 
 /* ========== media queries ============ */
