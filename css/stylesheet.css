@@ -253,6 +253,64 @@ h2 {
 
 
 
+/* ========== Galeria eventos ============ */
+
+.eventosHead {
+    color:black;
+    font-weight: 400;
+}
+
+.eventos2 {
+    color:black;
+    
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 500px;
+    padding: 10px;
+    grid-gap:10px;
+}
+
+.gallery__img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.gallery__item{
+    position:relative;
+
+}
+
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,0.1));
+    width: 100px;
+    margin:0;
+    padding:10px;
+}
+
+
+.gallery__item:nth-child(7) {
+    grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(5) {
+    grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(11) {
+    grid-column-start: span 2;
+}
 
 /* ========== aside ============ */
 
@@ -396,7 +454,7 @@ form {
     display:flex;
     flex-direction: column;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 20px 20px;
 }
 
@@ -420,6 +478,10 @@ input {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.botonaso:hover {
+    background-color: #B22222;
 }
 
 select {
